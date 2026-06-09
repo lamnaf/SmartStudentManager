@@ -1,0 +1,16 @@
+# Handle line endings automatically for text files
+* text=auto
+
+# Force bash scripts to use LF line endings
+gradlew text eol=lf
+*.sh text eol=lf
+
+# Force batch files to use CRLF line endings
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Denote binary files (never let git or export alter them)
+*.jar binary
+*.png binary
+*.keystore binary
+*.webp binary
